@@ -7,6 +7,7 @@ const Admin = mongooes.model('admin_register');
 router.get('/admin', async(req,res)=> {
   const data = await Admin.find();
   res.json(data);
+
 })
 
 router.post('/admin', (req, res)=>{

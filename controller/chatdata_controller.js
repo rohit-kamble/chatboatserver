@@ -10,7 +10,6 @@ router.get('/chatdetail',async(req,res)=>{
 })
 
 router.put('/chatpost/pushquetionandanswer', async(req,res)=>{
-  console.log("req.body****", req.body);
   const data1 ={
     quetion: req.body.quetion,
     answer: req.body.answer
